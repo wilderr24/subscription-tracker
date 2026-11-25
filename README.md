@@ -1,56 +1,80 @@
-# Welcome to your Expo app 👋
+# Abonelik Takip
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Dijital aboneliklerini tek yerden takip et: ay sonunda ne kadar harcadığını gör, hangi ödemenin yaklaştığını kaçırma.
 
-## Get started
+Expo (React Native) ile yazılmış, Android'de test edilmiş bir mobil uygulamadır. Hesap açmak gerekmez, tüm veriler yalnızca telefonda tutulur.
 
-1. Install dependencies
+> **Not:** Uygulama şu an yalnızca Türkçe ve Türk lirası (₺) destekler. Diğer diller ve para birimleri planlanıyor.
 
-   ```bash
-   npm install
-   ```
+## Özellikler
 
-2. Start the app
+- **Aboneliklerim:** Aylık ve yıllık toplam harcama özeti, ödeme gününe göre sıralı abonelik kartları, sıradaki ödemeyi gösteren uyarı. Yaklaşan ödemeler vurgulanır. Bir kartı basılı tutarak silebilirsin.
+- **Abonelik ekleme:** 30'dan fazla popüler servisin olduğu listeden uygulamayı ve planı seç. Listede plan yoksa kendi planını ve fiyatını yazabilirsin. Ödeme günü ve kalan ay sayısı girilir.
+- **Güncel abonelikler:** Servislerin plan fiyatlarına abone olmadan da göz atabilirsin. Her servis için resmi sayfaya bağlantı vardır.
+- **Aylık giderler:** Bu ayın toplamı, yıllık tahmin ve kategoriye göre harcama dağılımı.
+- **Kendi aboneliğim:** Listede olmayan bir aboneliği galeriden fotoğraf, isim, fiyat ve kategoriyle ekleyebilirsin.
+- **Yerel kayıt:** Uygulamayı kapatsan da veriler silinmez. Silinen abonelikler, geçmiş ayların hesabı bozulmasın diye arka planda saklanır.
 
-   ```bash
-   npx expo start
-   ```
+## Fiyatlar hakkında
 
-In the output, you'll find options to open the app in a
+Katalogdaki fiyatlar elle derlenmiştir ve en son **24 Kasım 2026** tarihinde kontrol edilmiştir. Tahmini olarak işaretlenen fiyatlar kesin ödeme tutarı değildir. Dövizli servislerde ABD liste fiyatı sabit bir kurla (1 USD ≈ 50,63 TL) çevrilmiştir; vergi ve mağaza fiyatları farklı olabilir. Fiyatı hesaba göre değişen servislerde kendi ödediğin tutarı girmen önerilir.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Fiyatlar [`src/lib/katalog.ts`](src/lib/katalog.ts) dosyasındadır. Hata görürsen düzeltmek için pull request açabilirsin.
 
-You can start developing by editing the files inside the **src/app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Kullanılan teknolojiler
 
-## Get a fresh project
+- [Expo](https://expo.dev) SDK 58 ve [Expo Router](https://docs.expo.dev/router/introduction) (dosya tabanlı yönlendirme)
+- React Native, TypeScript
+- AsyncStorage (yerel veri saklama)
+- expo-image-picker (fotoğraf seçme)
 
-When you're ready, run:
+## Kurulum
+
+Gereksinimler: [Node.js](https://nodejs.org) (LTS) ve telefonda [Expo Go](https://expo.dev/go).
 
 ```bash
-npm run reset-project
+git clone https://github.com/wilderr24/subscription-tracker.git
+cd subscription-tracker
+npm install
+npx expo start
 ```
 
-This command will move the starter code to the **example** directory and create a blank **src/app** directory where you can start developing.
+Terminalde çıkan QR kodu Expo Go ile okut. Telefon ve bilgisayar aynı Wi-Fi ağında olmalıdır. Bağlanamazsan `npx expo start --tunnel` dene.
 
-### Other setup steps
+## Proje yapısı
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+```
+src/
+├── app/
+│   ├── (tabs)/
+│   │   ├── index.tsx       # Aboneliklerim
+│   │   ├── guncel.tsx      # Güncel abonelik fiyatları
+│   │   ├── harcamalar.tsx  # Aylık giderler
+│   │   └── ozel.tsx        # Kendi aboneliğim
+│   ├── ekle.tsx            # Abonelik ekleme ekranı
+│   └── _layout.tsx
+├── components/
+│   └── logo.tsx            # Marka ikonu / fotoğraf gösterimi
+└── lib/
+    ├── katalog.ts          # Servisler ve plan fiyatları
+    ├── store.tsx           # Veri saklama ve hesaplamalar
+    └── tema.ts             # Renkler ve gölgeler
+```
 
-## Learn more
+## Yol haritası
 
-To learn more about developing your project with Expo, look at the following resources:
+- [ ] Ödeme günü yaklaşınca yerel bildirim
+- [ ] Ay ay harcama geçmişi ve karşılaştırma
+- [ ] Fiyatların internetten güncellenmesi
+- [ ] Çoklu para birimi
+- [ ] Çoklu dil desteği
+- [ ] Koyu mod
+- [ ] Yedekleme ve dışa aktarma
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## Katkı
 
-## Join the community
+Hata bildirimleri ve fiyat düzeltmeleri için bir issue ya da pull request açabilirsin.
 
-Join our community of developers creating universal apps.
+## Lisans
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+[MIT](LICENSE)
