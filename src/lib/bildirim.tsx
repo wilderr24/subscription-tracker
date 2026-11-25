@@ -40,11 +40,14 @@ Notifications.setNotificationHandler({
 });
 
 async function kanalHazirla() {
-  if (Platform.OS === "android") {
+  if (Platform.OS !== "android") return;
+  try {
     await Notifications.setNotificationChannelAsync(KANAL, {
       name: "Ödeme hatırlatmaları",
       importance: Notifications.AndroidImportance.HIGH,
     });
+  } catch (hata) {
+    console.warn("Bildirim kanalı oluşturulamadı:", hata);
   }
 }
 
