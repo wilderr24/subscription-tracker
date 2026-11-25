@@ -49,6 +49,15 @@ export default function TabsLayout() {
           ),
         }}
       />
+      <Tabs.Screen
+        name="ayarlar"
+        options={{
+          title: "Ayarlar",
+          tabBarIcon: ({ focused, size }) => (
+            <Ionicons name="settings" size={size} color={focused ? R.ana : R.soluk} />
+          ),
+        }}
+      />
     </Tabs>
   );
 }

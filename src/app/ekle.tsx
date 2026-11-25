@@ -4,12 +4,14 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
 import { router, useLocalSearchParams } from "expo-router";
 import Logo from "../components/logo";
-import { KATALOG, Servis, TAHMINI_FIYAT_NOTU } from "../lib/katalog";
+import { Servis } from "../lib/katalog";
+import { useKatalog } from "../lib/fiyatlar";
 import { R, golge } from "../lib/tema";
 import { para, useSubs } from "../lib/store";
 
 export default function Ekle() {
   const { ekle } = useSubs();
+  const { katalog, not: TAHMINI_FIYAT_NOTU } = useKatalog();
   const params = useLocalSearchParams<{ servis?: string; plan?: string }>();
   const [arama, setArama] = useState("");
   const [secili, setSecili] = useState<Servis | null>(null);
@@ -20,11 +22,11 @@ export default function Ekle() {
   const [gun, setGun] = useState("1");
   const [kalanAy, setKalanAy] = useState("12");
 
-  const liste = KATALOG.filter((k) => k.ad.toLowerCase().includes(arama.toLowerCase()));
+  const liste = katalog.filter((k) => k.ad.toLowerCase().includes(arama.toLowerCase()));
 
   useEffect(() => {
     if (!params.servis) return;
-    const servis = KATALOG.find((item) => item.id === params.servis);
+    const servis = katalog.find((item) => item.id === params.servis);
     if (!servis) return;
     const planParam = Number(params.plan);
     const seciliPlanNo = Number.isInteger(planParam) && planParam >= 0 && planParam < servis.planlar.length

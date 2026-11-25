@@ -3,7 +3,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
 import { router } from "expo-router";
 import Logo from "../../components/logo";
-import { FIYAT_KONTROL_TARIHI, KATALOG, TAHMINI_FIYAT_NOTU } from "../../lib/katalog";
+import { useKatalog } from "../../lib/fiyatlar";
 import { R, golge } from "../../lib/tema";
 import { para } from "../../lib/store";
 
@@ -16,14 +16,16 @@ function kaynagiAc(url?: string) {
 }
 
 export default function Guncel() {
+  const { katalog, kontrolTarihi, not, kaynak, yukleniyor } = useKatalog();
   return (
     <SafeAreaView style={s.kap} edges={["top"]}>
       <ScrollView contentContainerStyle={{ padding: 20, paddingBottom: 40 }}>
         <Text style={s.baslik}>Güncel Abonelikler</Text>
         <Text style={s.alt}>
-          Doğrulanabilen Türkiye fiyatları {FIYAT_KONTROL_TARIHI} tarihinde kontrol edildi. {TAHMINI_FIYAT_NOTU} Fiyatı hesaba göre değişen servislerde kendi ödediğin tutarı gir.
+          Doğrulanabilen Türkiye fiyatları {kontrolTarihi} tarihinde kontrol edildi. {not} Fiyatı hesaba göre değişen servislerde kendi ödediğin tutarı gir.
         </Text>
-        {KATALOG.map((k) => (
+        <Text style={s.alt}>{yukleniyor ? "Güncel fiyatlar kontrol ediliyor..." : kaynak === "internet" ? "Fiyatlar internetten güncellendi." : "İnternete ulaşılamadı, kayıtlı fiyatlar gösteriliyor."}</Text>
+        {katalog.map((k) => (
           <View key={k.id} style={s.kart}>
             <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 10 }}>
               <Logo ad={k.ad} renk={k.renk} boyut={44} />

@@ -1,0 +1,655 @@
+{
+  "surum": 1,
+  "kontrolTarihi": "24 Kasım 2026",
+  "not": "Tahmini fiyatlar kesin ödeme tutarı değildir. Dövizli servislerde ABD aylık liste fiyatı 1 USD ≈ 50,63 TL kuruyla çevrilmiştir; vergi ve mağaza fiyatları farklı olabilir.",
+  "servisler": [
+    {
+      "id": "netflix",
+      "ad": "Netflix",
+      "renk": "#E50914",
+      "kategori": "Eğlence",
+      "planlar": [
+        {
+          "ad": "Temel",
+          "fiyat": 259.99
+        },
+        {
+          "ad": "Standart",
+          "fiyat": 389.99
+        },
+        {
+          "ad": "Premium",
+          "fiyat": 499.99
+        }
+      ],
+      "kaynak": "https://www.netflix.com/tr/"
+    },
+    {
+      "id": "spotify",
+      "ad": "Spotify",
+      "renk": "#1DB954",
+      "kategori": "Müzik",
+      "planlar": [
+        {
+          "ad": "Öğrenci",
+          "fiyat": 60
+        },
+        {
+          "ad": "Bireysel",
+          "fiyat": 115
+        },
+        {
+          "ad": "Duo",
+          "fiyat": 159
+        },
+        {
+          "ad": "Aile",
+          "fiyat": 199
+        }
+      ],
+      "kaynak": "https://www.spotify.com/tr-tr/premium/"
+    },
+    {
+      "id": "youtube",
+      "ad": "YouTube Premium",
+      "renk": "#FF0000",
+      "kategori": "Eğlence",
+      "planlar": [
+        {
+          "ad": "Bireysel",
+          "fiyat": 119.99
+        },
+        {
+          "ad": "Aile",
+          "fiyat": 239.99
+        },
+        {
+          "ad": "Öğrenci",
+          "fiyat": 79.99
+        }
+      ],
+      "kaynak": "https://support.google.com/youtube/answer/6305537?hl=tr"
+    },
+    {
+      "id": "disney",
+      "ad": "Disney+",
+      "renk": "#113CCF",
+      "kategori": "Eğlence",
+      "planlar": [
+        {
+          "ad": "Disney+ Reklamlı",
+          "fiyat": 249.9
+        },
+        {
+          "ad": "Disney+ Reklamsız",
+          "fiyat": 449.9
+        }
+      ],
+      "kaynak": "https://www.disneyplus.com/tr-tr"
+    },
+    {
+      "id": "prime",
+      "ad": "Amazon Prime",
+      "renk": "#00A8E1",
+      "kategori": "Alışveriş",
+      "planlar": [
+        {
+          "ad": "Aylık",
+          "fiyat": 69.9
+        }
+      ],
+      "kaynak": "https://www.amazon.com.tr/prime"
+    },
+    {
+      "id": "hbo",
+      "ad": "HboMax",
+      "renk": "#5B2BE0",
+      "kategori": "Eğlence",
+      "planlar": [
+        {
+          "ad": "Standart",
+          "fiyat": 229.9
+        }
+      ],
+      "kaynak": "https://www.hbomax.com/tr/tr"
+    },
+    {
+      "id": "icloud",
+      "ad": "iCloud+",
+      "renk": "#3B82F6",
+      "kategori": "Bulut",
+      "planlar": [
+        {
+          "ad": "50 GB",
+          "fiyat": 49.99
+        },
+        {
+          "ad": "200 GB",
+          "fiyat": 169.99
+        },
+        {
+          "ad": "2 TB",
+          "fiyat": 549.99
+        },
+        {
+          "ad": "6 TB",
+          "fiyat": 1699.99
+        },
+        {
+          "ad": "12 TB",
+          "fiyat": 3399.99
+        }
+      ],
+      "kaynak": "https://www.apple.com/tr/icloud/"
+    },
+    {
+      "id": "chatgpt",
+      "ad": "ChatGPT",
+      "renk": "#10A37F",
+      "kategori": "Yapay Zeka",
+      "planlar": [
+        {
+          "ad": "Go",
+          "fiyat": 249.99
+        },
+        {
+          "ad": "Plus",
+          "fiyat": 999.99
+        },
+        {
+          "ad": "Pro 100",
+          "fiyat": 5299.99
+        },
+        {
+          "ad": "Pro 200",
+          "fiyat": 9999
+        },
+        {
+          "ad": "Pro 500",
+          "fiyat": 26499
+        }
+      ],
+      "kaynak": "https://chatgpt.com/tr-TR/pricing/"
+    },
+    {
+      "id": "discord",
+      "ad": "Discord Nitro",
+      "renk": "#5865F2",
+      "kategori": "İletişim",
+      "planlar": [
+        {
+          "ad": "Nitro Basic",
+          "fiyat": 37.99
+        },
+        {
+          "ad": "Nitro",
+          "fiyat": 104.99
+        }
+      ],
+      "kaynak": "https://support.discord.com/hc/en-us/articles/4407269525911-Localized-Pricing-on-Discord"
+    },
+    {
+      "id": "apple-music",
+      "ad": "Apple Music",
+      "renk": "#FA243C",
+      "kategori": "Müzik",
+      "planlar": [
+        {
+          "ad": "Bireysel",
+          "fiyat": 89.99
+        },
+        {
+          "ad": "Öğrenci",
+          "fiyat": 49.99
+        },
+        {
+          "ad": "Aile",
+          "fiyat": 149.99
+        }
+      ],
+      "kaynak": "https://www.apple.com/tr/apple-music/"
+    },
+    {
+      "id": "youtube-music",
+      "ad": "YouTube Music Premium",
+      "renk": "#FF0000",
+      "kategori": "Müzik",
+      "planlar": [
+        {
+          "ad": "Aylık",
+          "fiyat": 119.9
+        }
+      ],
+      "kaynak": "https://support.google.com/youtube/answer/6305537?hl=tr"
+    },
+    {
+      "id": "google-one",
+      "ad": "Google One",
+      "renk": "#4285F4",
+      "kategori": "Bulut",
+      "planlar": [
+        {
+          "ad": "Basic · 100 GB",
+          "fiyat": 84.99
+        },
+        {
+          "ad": "AI Plus · 2 TB",
+          "fiyat": 359.99
+        },
+        {
+          "ad": "AI Pro · 5 TB",
+          "fiyat": 869.99
+        }
+      ],
+      "kaynak": "https://one.google.com/about/plans?hl=tr"
+    },
+    {
+      "id": "microsoft-365",
+      "ad": "Microsoft 365",
+      "renk": "#D83B01",
+      "kategori": "Üretkenlik",
+      "planlar": [
+        {
+          "ad": "Bireysel",
+          "fiyat": 329.99
+        },
+        {
+          "ad": "Aile",
+          "fiyat": 409.99
+        },
+        {
+          "ad": "Premium",
+          "fiyat": 719.99
+        }
+      ],
+      "kaynak": "https://www.microsoft.com/tr-tr/microsoft-365/buy/compare-all-microsoft-365-products"
+    },
+    {
+      "id": "gain",
+      "ad": "GAİN",
+      "renk": "#4222A8",
+      "kategori": "Eğlence",
+      "planlar": [
+        {
+          "ad": "Standart aylık fiyat",
+          "fiyatNotu": "Kayıt ekranında görüntülenir"
+        },
+        {
+          "ad": "Kampanya · ilk 3 ay",
+          "fiyat": 129
+        }
+      ],
+      "kaynak": "https://www.gain.tv/"
+    },
+    {
+      "id": "exxen",
+      "ad": "Exxen",
+      "renk": "#FF7A00",
+      "kategori": "Eğlence",
+      "planlar": [
+        {
+          "ad": "Reklamlı · aylık",
+          "fiyat": 219,
+          "tahmini": true
+        },
+        {
+          "ad": "Reklamsız · aylık",
+          "fiyat": 309,
+          "tahmini": true
+        },
+        {
+          "ad": "Spor · reklamlı aylık",
+          "fiyat": 486,
+          "tahmini": true
+        },
+        {
+          "ad": "Spor · reklamsız aylık",
+          "fiyat": 599,
+          "tahmini": true
+        }
+      ],
+      "kaynak": "https://plan.exxen.com/tr/"
+    },
+    {
+      "id": "mubi",
+      "ad": "MUBI",
+      "renk": "#151515",
+      "kategori": "Eğlence",
+      "planlar": [
+        {
+          "ad": "Aylık",
+          "fiyat": 229
+        }
+      ],
+      "kaynak": "https://mubi.com/tr/subscription"
+    },
+    {
+      "id": "tod",
+      "ad": "TOD",
+      "renk": "#0B2255",
+      "kategori": "Spor",
+      "planlar": [
+        {
+          "ad": "Eğlence · aylık",
+          "fiyatNotu": "Paket ve kampanyaya göre değişir"
+        },
+        {
+          "ad": "Spor · sezonluk aylık eşdeğer",
+          "fiyat": 479
+        },
+        {
+          "ad": "Spor · aylık ödemeli",
+          "fiyat": 1590
+        }
+      ],
+      "kaynak": "https://www.todtv.com.tr/"
+    },
+    {
+      "id": "ssport",
+      "ad": "S Sport Plus",
+      "renk": "#E20613",
+      "kategori": "Spor",
+      "planlar": [
+        {
+          "ad": "Aylık",
+          "fiyat": 399
+        }
+      ],
+      "kaynak": "https://ssportplus.com/"
+    },
+    {
+      "id": "apple-tv",
+      "ad": "Apple TV+",
+      "renk": "#111111",
+      "kategori": "Eğlence",
+      "planlar": [
+        {
+          "ad": "Aylık",
+          "fiyatNotu": "Apple hesabında görüntülenir"
+        }
+      ],
+      "kaynak": "https://www.apple.com/tr/apple-tv-plus/"
+    },
+    {
+      "id": "deezer",
+      "ad": "Deezer",
+      "renk": "#A238FF",
+      "kategori": "Müzik",
+      "planlar": [
+        {
+          "ad": "Premium · aylık",
+          "fiyat": 59.99
+        },
+        {
+          "ad": "Duo · aylık",
+          "fiyat": 79.99
+        },
+        {
+          "ad": "Family · aylık",
+          "fiyat": 99.99
+        }
+      ],
+      "kaynak": "https://www.deezer.com/tr/offers"
+    },
+    {
+      "id": "tidal",
+      "ad": "TIDAL",
+      "renk": "#000000",
+      "kategori": "Müzik",
+      "planlar": [
+        {
+          "ad": "Aylık",
+          "fiyat": 607,
+          "tahmini": true
+        }
+      ],
+      "kaynak": "https://tidal.com/pricing"
+    },
+    {
+      "id": "playstation-plus",
+      "ad": "PlayStation Plus",
+      "renk": "#003791",
+      "kategori": "Oyun",
+      "planlar": [
+        {
+          "ad": "Essential · aylık",
+          "fiyat": 400
+        },
+        {
+          "ad": "Extra · aylık",
+          "fiyat": 600
+        },
+        {
+          "ad": "Deluxe · aylık",
+          "fiyat": 710
+        }
+      ],
+      "kaynak": "https://www.playstation.com/tr-tr/ps-plus/"
+    },
+    {
+      "id": "xbox-game-pass",
+      "ad": "Xbox Game Pass",
+      "renk": "#107C10",
+      "kategori": "Oyun",
+      "planlar": [
+        {
+          "ad": "Essential · aylık",
+          "fiyat": 269
+        },
+        {
+          "ad": "Premium · aylık",
+          "fiyat": 409
+        },
+        {
+          "ad": "Ultimate · aylık",
+          "fiyat": 529
+        }
+      ],
+      "kaynak": "https://www.xbox.com/tr-TR/xbox-game-pass"
+    },
+    {
+      "id": "nintendo-online",
+      "ad": "Nintendo Switch Online",
+      "renk": "#E60012",
+      "kategori": "Oyun",
+      "planlar": [
+        {
+          "ad": "Bireysel · aylık",
+          "fiyat": 202,
+          "tahmini": true
+        },
+        {
+          "ad": "Aile · aylık eşdeğer (yıllık ödeme)",
+          "fiyat": 148,
+          "tahmini": true
+        }
+      ],
+      "kaynak": "https://www.nintendo.com/us/switch/online/"
+    },
+    {
+      "id": "ea-play",
+      "ad": "EA Play",
+      "renk": "#FF4747",
+      "kategori": "Oyun",
+      "planlar": [
+        {
+          "ad": "Aylık",
+          "fiyat": 303,
+          "tahmini": true
+        }
+      ],
+      "kaynak": "https://www.ea.com/ea-play"
+    },
+    {
+      "id": "canva",
+      "ad": "Canva Pro",
+      "renk": "#00C4CC",
+      "kategori": "Üretkenlik",
+      "planlar": [
+        {
+          "ad": "Aylık",
+          "fiyat": 759,
+          "tahmini": true
+        }
+      ],
+      "kaynak": "https://www.canva.com/tr_tr/pro/"
+    },
+    {
+      "id": "adobe-cc",
+      "ad": "Adobe Creative Cloud",
+      "renk": "#DA1F26",
+      "kategori": "Üretkenlik",
+      "planlar": [
+        {
+          "ad": "Bireysel · aylık",
+          "fiyat": 3543,
+          "tahmini": true
+        }
+      ],
+      "kaynak": "https://www.adobe.com/tr/creativecloud/plans.html"
+    },
+    {
+      "id": "dropbox",
+      "ad": "Dropbox",
+      "renk": "#0061FF",
+      "kategori": "Bulut",
+      "planlar": [
+        {
+          "ad": "Plus · aylık",
+          "fiyat": 607,
+          "tahmini": true
+        }
+      ],
+      "kaynak": "https://www.dropbox.com/plans"
+    },
+    {
+      "id": "duolingo",
+      "ad": "Duolingo Super",
+      "renk": "#58CC02",
+      "kategori": "Eğitim",
+      "planlar": [
+        {
+          "ad": "Bireysel · aylık",
+          "fiyat": 658,
+          "tahmini": true
+        },
+        {
+          "ad": "Aile · aylık eşdeğer (yıllık ödeme)",
+          "fiyat": 506,
+          "tahmini": true
+        }
+      ],
+      "kaynak": "https://www.duolingo.com/super"
+    },
+    {
+      "id": "strava",
+      "ad": "Strava",
+      "renk": "#FC4C02",
+      "kategori": "Fitness",
+      "planlar": [
+        {
+          "ad": "Aylık",
+          "fiyat": 607,
+          "tahmini": true
+        }
+      ],
+      "kaynak": "https://www.strava.com/subscribe"
+    },
+    {
+      "id": "claude",
+      "ad": "Claude Pro",
+      "renk": "#D97757",
+      "kategori": "Yapay Zeka",
+      "planlar": [
+        {
+          "ad": "Pro · aylık",
+          "fiyat": 1013,
+          "tahmini": true
+        }
+      ],
+      "kaynak": "https://claude.com/pricing"
+    },
+    {
+      "id": "midjourney",
+      "ad": "Midjourney",
+      "renk": "#111111",
+      "kategori": "Yapay Zeka",
+      "planlar": [
+        {
+          "ad": "Basic · aylık",
+          "fiyat": 506,
+          "tahmini": true
+        },
+        {
+          "ad": "Standard · aylık",
+          "fiyat": 1519,
+          "tahmini": true
+        },
+        {
+          "ad": "Pro · aylık",
+          "fiyat": 3038,
+          "tahmini": true
+        }
+      ],
+      "kaynak": "https://www.midjourney.com/plans"
+    },
+    {
+      "id": "twitch-turbo",
+      "ad": "Twitch Turbo",
+      "renk": "#9146FF",
+      "kategori": "Eğlence",
+      "planlar": [
+        {
+          "ad": "Aylık",
+          "fiyat": 607,
+          "tahmini": true
+        }
+      ],
+      "kaynak": "https://www.twitch.tv/turbo"
+    },
+    {
+      "id": "figma",
+      "ad": "Figma Professional",
+      "renk": "#F24E1E",
+      "kategori": "Üretkenlik",
+      "planlar": [
+        {
+          "ad": "Full seat · aylık",
+          "fiyat": 1013,
+          "tahmini": true
+        }
+      ],
+      "kaynak": "https://www.figma.com/pricing/"
+    },
+    {
+      "id": "tv-plus",
+      "ad": "TV+",
+      "renk": "#00A7D8",
+      "kategori": "Eğlence",
+      "planlar": [
+        {
+          "ad": "İlk 6 fatura dönemi",
+          "fiyat": 199
+        },
+        {
+          "ad": "Sonraki fatura dönemleri",
+          "fiyat": 299
+        }
+      ],
+      "kaynak": "https://tvplus.com.tr/"
+    },
+    {
+      "id": "fizy",
+      "ad": "fizy",
+      "renk": "#FF4A4A",
+      "kategori": "Müzik",
+      "planlar": [
+        {
+          "ad": "Premium · aylık",
+          "fiyatNotu": "Turkcell paketi ve kampanyasına göre değişir"
+        }
+      ],
+      "kaynak": "https://fizy.com/"
+    }
+  ]
+}
